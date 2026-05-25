@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+   <head>
+     <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="description" content="Portfolio of Folarin Kayode, a software developer building accessible, scalable web products and systems.">
+	 <meta property="og:title" content="WakaDobe Network - Folarin Kayode Portfolio">
+	 <meta property="og:description" content="Explore projects, technical proficiency, and ways to connect with Folarin Kayode.">
+	 <meta property="og:type" content="website">
+	 <meta property="og:image" content="img/about.jpg">
+	 <meta property="og:url" content="index.html">
+	 <meta name="twitter:card" content="summary_large_image">
+	 <meta name="twitter:title" content="WakaDobe Network - Folarin Kayode Portfolio">
+	 <meta name="twitter:description" content="Portfolio of Folarin Kayode, software developer.">
+	 <meta name="twitter:image" content="img/about.jpg">
+	 <link rel="shortcut icon" href="browser.ico" type="image/x-icon">
+	 <link rel="icon" href="browser.ico" type="image/x-icon">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="fontawesome/css/all.css">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+	 <title>Wakadobe Network</title>
+	 <style>
+	   .header{
+	      background-color:#d3b8ed!important;
+		  color:midnightblue;
+		  position:sticky;
+		  z-index:1;
+	   }
+	   .link{
+	      color:midnightblue;
+		  font-size:18px;
+	   }
+	  .about{
+	    background-color:rgb(30, 136, 229);
+	
+	  }
+	  .waka{
+		width:40px;
+	    color:midnightblue;
+	  }
+	  abbr{
+	    font-size:10px;
+		font-style:italic;
+		font-family:"Inconsolata", monospace;
+	  }
+	  h2{
+	  font-family:"Libre Baskerville", serif;
+	  font-size: 1.8em;
+	  font-weight:700;
+	  color:midnightblue;
+	  }
+	  p{
+	   font-family:"Source Sans 3", sans-serif;
+	   font-size:1.2em;
+	   color:#274c77;
+	  }
+	  .footer{
+	    color:#2C216B;
+	  }
+	  .engage{
+	    background-color:rgb(30, 136, 229) !important;
+		border-radius:9px;
+	  }
+	  .link:hover{
+		color:#8da9c4;
+	  }
+	  .a-link:hover{
+		color:#8da9c4 !important;
+	  }
+	  .media:hover{
+	    color:lightgrey;
+		
+	  }
+	  .welcome{
+	     font-family:"Lobster", sans-serif;
+	  }
+	  .progress-70{
+	     width:70%;
+	  }
+	  .progress-80{
+	     width:80%;
+	  }
+	  .cover{
+		padding:40px;
+		margin-top:-30px;
+	  }
+	  .cover img{
+	     width:100%;
+		 height:400px;
+		 object-fit:cover;
+	  }
+	    .skill-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        
+        .icon-wrapper i {
+            font-size: 32px;
+            color: #7c3aed;
+        }
+        
+        .skill-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #1f2937;
+        }
+        
+        .skill-badge {
+            display: inline-block;
+            background-color: #f3f4f6;
+            color: #374151;
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+        
+        .skill-badge:hover {
+            background-color: #e5e7eb;
+        }
+        
+        .skills-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+		.expertise{ 
+		  background-color: #faf5ff;
+		  padding:40px;
+		  border-radius:9px;
+		  color:midnightblue;
+		}
+		
+		.project-card {
+			background-color:#faf5ff !important;
+	    }
+	  	.divide{
+			margin-top: 20px;
+  			margin-bottom: 20px;
+  			border-top: 4px solid #faf5ff;
+			border-style: outset;
+		}
+		.portfolio-web{
+			font-size: 28px;
+            font-weight: 600;
+            color: #2d3748;
+            display: inline-block;
+            position: relative;
+			
+		}
+		.portfolio-web::after {
+			content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+		}
+	.download-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0d6efd; /* Bootstrap primary blue */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 50px; /* Pill-shaped button */
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+	}
+	.download-btn:hover {
+    background-color: #d3b8ed; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Slight lift effect */
+	}
+
+	.hobbies{
+		list-style-type: square;
+		font-weight:500;
+	}
+	 </style>
+   </head>
+   <body>
+  <!-- <div class="row">
+	     <div class="col-md-4"></div>
+		 <div class="col-md-8"></div>
+	   </div>-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+         <div class="container-fluid">
+	          <h1 class="portfolio-web">WakaDobe</h1>
+			  <hr class="waka">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+         	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        	<ul class="navbar-nav ms-auto mb-2 g-3 mb-lg-0">
+			<li class="nav-item">
+	             <a class="nav-link  link" aria-current="page" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+	             <a class="nav-link  link" aria-current="page" href="#about">About</a>
+             </li>
+             <li class="nav-item">
+	            <a class="nav-link link" href="#technical-skills">Technical Skills</a>
+             </li>
+			 <li class="nav-item">
+	            <a class="nav-link link" href="#featured-work">Featured Work</a>
+             </li>
+			 <li class="nav-item">
+	            <a class="nav-link link" href="https://wakadobe-africa.onrender.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+             </li>
+			 <li class="nav-item">
+	            <a class="nav-link link" href="#testimonials">Testimonials</a>
+             </li>
+			 <li class="nav-item">
+	           <button type="button" class="btn btn-primary connect ms-lg-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            CONNECT
+			</button>
+             </li>
+            </ul>
+           
+         </div>
+         </div>
+       </nav>
+	   <section class="container">
+	    <div class="row py-2">
+		   <div class="col-12">
+			
+				<div class="cover">
+					<img src="img/cover.jpg" alt="cover photo">
+					<div>
+						<img src="img/profile.jpeg" alt="profile photo" class="rounded-circle border border-3 border-light" style="width:150px; height:150px; object-fit:cover; margin-top:-80px; margin-left:20px;">
+					</div>
+				</div>
+
+				</div>
+		    </div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Folarin Kayode</h3>
+					<p>Software Developer | Product Builder | Tech Enthusiast</p>
+					<p><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
+					<a href="https://drive.google.com/file/d/11FWiRzvKR52auZFGPCG0GIFSOxTaWC1x/view?usp=drive_link" 
+					class="download-btn" download>
+    				<i class="bi bi-download"></i> Download Resume
+					</a>
+
+				</div>
+				<div class="col-md-6">
+					<div class="g-4">
+						<a href="https://www.facebook.com" class="my-2 text-nowrap"><i class="fa-brands fa-facebook"></i></a>			
+						<a href="https://www.instagram.com" class="mb-2 text-nowrap"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.github.com" class="mb-2 text-nowrap"><i class="fa-brands fa-github"> </i></a>
+						<a href="https://www.discord.com" class="mb-2 text-nowrap"><i class="fa-brands fa-discord"></i></a>
+						<a href="https://www.telegram.com" class="mb-2 text-nowrap"><i class="fa-brands fa-telegram"></i></a>
+						<a href="https://www.linkedin.com" class="mb-2 text-nowrap"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<h3 class="pt-2">About Me</h3>
+					<hr>
+					<p>I am an Agile Software Developer who transforms complex business problems into scalable, user-centric web products.With a unique background in Economics and Development Studies, I bring an analytical, big-picture perspective to the software development lifecycle. I care deeply about how technology impacts real-world users and business outcomes.A firm believer in the Zen of Python, I build code that is beautiful, explicit, and simple. I thrive in highly collaborative environments, working closely with stakeholders to translate needs into elegant technical solutions.When I'm not writing code, you can find me:<ul class="hobbies">
+						<li>Writing on My Blog about relativity of success and growth across domains.</li>
+						<li>Exploring new technologies and system architectures.</li>
+						<li>Reading up on the latest trends in web accessibility.</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="container expertise">
+		<div class="row mt-4">
+		   <div class="col-12 mt-2 text-center" id="technical-skills">
+		       <h2>Technical Skills</h2>
+			   <p>I build and develop efficient and scalable solutions for businesses and agencies.</p>
+		   </div>
+		 </div>
+		 
+		
+        	<div class="row g-4">
+            <!-- Frontend Card -->
+            	<div class="col-lg-4 col-md-6">
+						<div class="skill-card">
+							<div class="icon-wrapper">
+								<i class="bi bi-code-slash"></i>
+							</div>
+							<h3>Frontend</h3>
+							<div class="skills-wrapper">
+								<span class="skill-badge">React</span>
+								<span class="skill-badge">HTML5</span>
+								<span class="skill-badge">CSS3</span>
+								<span class="skill-badge">Bootstrap CSS</span>
+								<span class="skill-badge">javascript</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Backend Card -->
+					<div class="col-lg-4 col-md-6">
+						<div class="skill-card">
+							<div class="icon-wrapper">
+								<i class="bi bi-server"></i>
+							</div>
+							<h3>Backend</h3>
+							<div class="skills-wrapper">
+								<span class="skill-badge">Node.js</span>
+								<span class="skill-badge">Python</span>
+								<span class="skill-badge">MySQL</span>
+								<span class="skill-badge">Redis</span>
+								<span class="skill-badge">MongoDB</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Services Card -->
+					<div class="col-lg-4 col-md-6">
+						<div class="skill-card">
+							<div class="icon-wrapper">
+								<i class="bi bi-briefcase"></i>
+							</div>
+							<h3>Services</h3>
+							<div class="skills-wrapper">
+								<span class="skill-badge">Wireframing</span>
+								<span class="skill-badge">Webdev</span>
+								<span class="skill-badge">System Design</span>
+								<span class="skill-badge">Architecture</span>
+								<span class="skill-badge">Automation workflow</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="skill-card">
+							<div class="icon-wrapper">
+								<i class="bi bi-list-task"></i>
+							</div>
+							<h3>Automation Workflow</h3>
+							<div class="skills-wrapper">
+								<span class="skill-badge">N8N</span>
+								<span class="skill-badge">Zapier</span>
+								<span class="skill-badge">Make.com</span>
+								<span class="skill-badge">Airtable</span>
+							</div>
+						</div>
+					</div>
+			   </div>
+			</div>
+		</div>
+		</div>
+		<section class="container py-5">  
+		<div class="row mt-4 g-4">
+			<div class="col-12 text-center" id="featured-work">
+				<h2>Featured Work</h2>
+			</div>				
+            <!-- Project 1: E-commerce Layout -->
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card project-card shadow-sm">
+                    <img src="projects/wakadobe.png" class="card-img-top" alt="E-commerce layout preview">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Wakadobe Blog</h5>
+                        <p class="card-text flex-grow-1">
+							An Editorial and content publishing platform exploring African business, 
+							wealth creation, and personal development. Features user authentication, role-based access control, rich text editing,
+							and a responsive design built to showcase long-form content. 
+							Implemented with semantic HTML structure, 
+							custom CSS styling, and form handling for reader engagement.
+						</p>
+                        <div>
+							<span class="skill-badge">Python</span>
+							<span class="skill-badge">HTML5</span>
+							<span class="skill-badge">CSS3</span>
+							<span class="skill-badge">Bootstrap CSS</span>
+							<span class="skill-badge">JavaScript</span>
+						</div>
+                        <div class="project-links">
+                            <a href="https://github.com/wakadobe-africa/Wakadobe-Africa" 
+                               class="btn btn-github btn-project" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                GitHub
+                            </a>
+                            <a href="https://wakadobe-africa.onrender.com/" 
+                               class="btn btn-live btn-project" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="col-12 col-lg-4 col-md-6">
+                <div class="card project-card shadow-sm">
+                    <img src="projects/choc.png" class="card-img-top" alt="Chocolate company website preview">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Chocolate Company Website</h5>
+                        <p class="card-text flex-grow-1">An informational website concept highlighting company identity, sustainability narrative, and clear content flow. Built with semantic HTML and custom CSS.</p>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/wakadobe-africa/Corporate-website" 
+                               class="btn btn-github btn-project" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                GitHub
+                            </a>
+                            <a href="https://corporate-website-ay4n.onrender.com/" 
+                               class="btn btn-live btn-project" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+ 
+            
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card project-card shadow-sm">
+                    <img src="projects/mycircle.png" class="card-img-top" alt="MyCircle website preview">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">MyCircle- Community Platform</h5>
+                        <p class="card-text flex-grow-1">
+							A community-building platform designed to facilitate group conversations and authentic connections. 
+							The interface emphasizes user engagement with features for community creation, membership management, 
+							and conversation threads. Built with accessibility and user experience as primary design goals.
+						</p>
+                        <div>
+							<span class="skill-badge">HTML5</span>
+							<span class="skill-badge">CSS3</span>
+							<span class="skill-badge">Bootstrap CSS</span>
+							<span class="skill-badge">JavaScript</span>
+							<span class="skill-badge">Python</span>
+							
+						</div>
+                        <div class="project-links">
+                            <a href="https://github.com/wakadobe-africa/Mycircle-/tree/master" 
+                               class="btn btn-github btn-project" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                GitHub
+                            </a>
+                           <!--  <a href="https://mycircle-community.onrender.com/" 
+                               class="btn btn-live btn-project" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                Live Site
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</section>
+		<hr class="divide">
+		<div class="container pb-5">
+		<div class="row mt-4 g-4">
+		  
+		  
+		 <div class="col-md-6" id="testimonials">
+		   <h2 class="footer">Client Testimonials</h2>
+		    <div class="accordion accordion-flush" id="accordionFlushExample">
+			  <div class="accordion-item">
+				<h2 class="accordion-header">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+					Amina Yusuf - Product Manager, NovaPay
+				  </button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+				  <div class="accordion-body">Folarin transformed our payment dashboard into a product users actually enjoy. He communicates clearly, ships on time, and always thinks about usability before writing code.</div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+					Chinedu Okoro - Founder, RentBridge
+				  </button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+				  <div class="accordion-body">Working with Folarin was one of our best product decisions. He helped us launch core property-listing features quickly while keeping the codebase clean and scalable.</div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+					Tolu Adebayo - Operations Lead, MedTrack
+				  </button>
+				</h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+				  <div class="accordion-body">He built a reliable internal tool that reduced our manual processing time by more than half. Beyond coding, he asked smart questions that improved the final workflow.</div>
+				</div>
+			  </div>
+			   <div class="accordion-item">
+				<h2 class="accordion-header">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+					Ifeoma Nwosu - UX Designer, Studio Grid
+				  </button>
+				</h2>
+				<div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+				  <div class="accordion-body">Folarin is the kind of developer every designer hopes to work with. He respects design details, suggests better interaction patterns, and turns mockups into polished experiences.</div>
+				</div>
+			   </div>
+			  <div class="accordion-item">
+		      <h2 class="accordion-header">
+		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+			     Samuel Adeyemi - CTO, BrightLabs
+		      </button>
+		    </h2>
+		    <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+		      <div class="accordion-body">I trust Folarin with critical features because he combines speed with engineering discipline. He writes maintainable code, documents key decisions, and collaborates exceptionally well.</div>
+            </div>
+          </div>	  
+			 </div>
+					
+		</div>
+		<div class="col-md-6 text-center">
+			
+		     <h2 class="fw-bolder py-3 footer">Want to collaborate on a project?</h2>
+			 <p>I'm open to collaborations in building and developing products across AI, blockchain and software</p>
+			<div>
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQVnZtmspuiPieaGAzFJdvsZyAugTx76xXvyvSe3B098gMEw/viewform?embedded=true" width="520" height="653" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>   
+			</div>
+			
+
+		 </div>
+		 </div>
+		</div>
+		
+		
+	 
+       
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Connect</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="d-flex flex-column">
+			    <a href="https://www.facebook.com" class="my-2 text-nowrap"><i class="fa-brands fa-facebook"> Follow on Facebook</i></a>			
+				<a href="https://www.instagram.com" class="mb-2 text-nowrap"><i class="fa-brands fa-instagram"> Follow on Instagram</i></a>
+				<a href="https://github.com/wakadobe-africa" class="mb-2 text-nowrap"><i class="fa-brands fa-github"> Follow on Github</i></a>
+				<a href="https://www.discord.com" class="mb-2 text-nowrap"><i class="fa-brands fa-discord"> Follow on Discord</i></a>
+				<a href="https://www.telegram.com" class="mb-2 text-nowrap"><i class="fa-brands fa-telegram"> Follow on Telegram</i></a>
+				<a href="https://www.linkedin.com" class="mb-2 text-nowrap"><i class="fa-brands fa-linkedin"> Follow on Linkedin</i></a>
+			</div>
+			  </div>
+			  <div class="modal-footer">
+				<a href="mailto:forlarinkayode@gmail.com" class="btn btn-primary">Send Email</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<hr class="divide">
+		<footer>
+		<div class="container-fluid">
+		<div class="row text-center">
+	     <div class="col-12 p-4 bg-light">
+		   <h5>The Wakadobe Network &copy; <span id="currentYear"></span></h5>
+		 </div>
+	   </div>
+	   </div>
+	 </footer>
+     </div>
+	 
+	 <script src="bootstrap/js/bootstrap.bundle.js"></script>
+	 <script>
+	   const year = document.getElementById('currentYear');
+	   const currentYear = new Date().getFullYear();
+	   year.textContent = currentYear;
+	
+	 </script>
+   </body>
+</html>
