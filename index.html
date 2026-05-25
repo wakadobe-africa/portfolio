@@ -254,49 +254,60 @@
          </div>
        </nav>
 	   <section class="container">
-	    <div class="row py-2">
-		   <div class="col-12">
-			
-				<div class="cover">
-					<img src="img/cover.jpg" alt="cover photo">
-					<div>
-						<img src="img/profile.jpeg" alt="profile photo" class="rounded-circle border border-3 border-light" style="width:150px; height:150px; object-fit:cover; margin-top:-80px; margin-left:20px;">
-					</div>
-				</div>
+  <!-- Row 1: Visual Branding -->
+  <div class="row py-2">
+    <div class="col-12">
+      <div class="cover position-relative">
+        <img src="img/cover.jpg" alt="cover photo" class="img-fluid w-100 rounded-3">
+        <div class="profile-avatar-container">
+          <img src="img/profile.jpeg" alt="profile photo" class="rounded-circle border border-3 border-light shadow-sm" style="width:150px; height:150px; object-fit:cover; margin-top:-75px; margin-left:20px; position:relative; z-index:2;">
+        </div>
+      </div>
+    </div>
+  </div>
 
-				</div>
-		    </div>
-			<div class="row">
-				<div class="col-md-6">
-					<h3>Folarin Kayode</h3>
-					<p>Software Developer | Product Builder | Tech Enthusiast</p>
-					<p><i class="bi bi-geo-alt"></i> Lagos, Nigeria</p>
-					<a href="https://drive.google.com/file/d/11FWiRzvKR52auZFGPCG0GIFSOxTaWC1x/view?usp=drive_link" 
-					class="download-btn" download>
-    				<i class="bi bi-download"></i>   Download Resume
-					</a>
+  <!-- Row 2: Information Grid -->
+  <div class="row mt-2">
+    
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h3>Folarin Kayode</h3>
+      <p class="text-muted">Software Developer | Product Builder | Tech Enthusiast</p>
+      <p><i class="bi bi-geo-alt-fill text-danger"></i> Lagos, Nigeria</p>
+      
+      <!-- The Download Button -->
+      <a href="https://drive.google.com/file/d/11FWiRzvKR52auZFGPCG0GIFSOxTaWC1x/view?usp=drive_link" class="download-btn" download>
+        <i class="bi bi-download"></i> Download Resume
+      </a>
+    </div>
 
-				</div>
-				<div class="col-md-6">
-					<div class="g-4">
-						<a href="https://www.facebook.com" class="my-2 text-nowrap"><i class="fa-brands fa-facebook"></i></a>			
-						<a href="https://www.instagram.com" class="mb-2 text-nowrap"><i class="fa-brands fa-instagram"></i></a>
-						<a href="https://www.github.com" class="mb-2 text-nowrap"><i class="fa-brands fa-github"> </i></a>
-						<a href="https://www.discord.com" class="mb-2 text-nowrap"><i class="fa-brands fa-discord"></i></a>
-						<a href="https://www.telegram.com" class="mb-2 text-nowrap"><i class="fa-brands fa-telegram"></i></a>
-						<a href="https://www.linkedin.com" class="mb-2 text-nowrap"><i class="fa-brands fa-linkedin"></i></a>
-					</div>
-					<h3 class="pt-2">About Me</h3>
-					<hr>
-					<p>I am an Agile Software Developer who transforms complex business problems into scalable, user-centric web products.With a unique background in Economics and Development Studies, I bring an analytical, big-picture perspective to the software development lifecycle. I care deeply about how technology impacts real-world users and business outcomes.A firm believer in the Zen of Python, I build code that is beautiful, explicit, and simple. I thrive in highly collaborative environments, working closely with stakeholders to translate needs into elegant technical solutions.When I'm not writing code, you can find me:<ul class="hobbies">
-						<li>Writing on My Blog about relativity of success and growth across domains.</li>
-						<li>Exploring new technologies and system architectures.</li>
-						<li>Reading up on the latest trends in web accessibility.</li>
-					</ul>
-					</p>
-				</div>
-			</div>
-		</section>
+    <!-- Right Column: Networks & Biography -->
+    <div class="col-md-6">
+      <!-- Fixed Social Media Flex Container -->
+      <div class="d-flex flex-wrap gap-3 mb-3 fs-4">
+        <a href="https://www.facebook.com" class="text-decoration-none"><i class="fa-brands fa-facebook"></i></a>			
+        <a href="https://www.instagram.com" class="text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.github.com" class="text-decoration-none"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.discord.com" class="text-decoration-none"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://www.telegram.com" class="text-decoration-none"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.linkedin.com" class="text-decoration-none"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <h3>About Me</h3>
+      <hr>
+      <p>I am an Agile Software Developer who transforms complex business problems into scalable, user-centric web products. With a unique background in Economics and Development Studies, I bring an analytical, big-picture perspective to the software development lifecycle. I care deeply about how technology impacts real-world users and business outcomes.</p>
+      
+      <p>A firm believer in the Zen of Python, I build code that is beautiful, explicit, and simple. I thrive in highly collaborative environments, working closely with stakeholders to translate needs into elegant technical solutions.</p>
+      
+      <p>When I'm not writing code, you can find me:</p>
+      <ul class="hobbies">
+        <li>Writing on My Blog about relativity of success and growth across domains.</li>
+        <li>Exploring new technologies and system architectures.</li>
+        <li>Reading up on the latest trends in web accessibility.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 		<div class="container expertise">
 		<div class="row mt-4">
 		   <div class="col-12 mt-2 text-center" id="technical-skills">
